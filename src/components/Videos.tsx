@@ -3,9 +3,9 @@ export default function Videos() {
   // Click a video, copy the ?v= parameter from the URL (11-char code)
   const videoIds = [
     "bhaLpDVlgDM",
-    "REPLACE_ID_2", // REPLACE: paste second video ID here
-    "REPLACE_ID_3", // REPLACE: paste third video ID here
-    "REPLACE_ID_4", // REPLACE: paste fourth video ID here
+    "PKapegaqyls", // "Get To Know" series Episode 1
+    "C06dxBkflqw", // Church Militant interview feature
+    "REPLACE_ID_4", // REPLACE: paste a video ID from https://www.youtube.com/@e-knock6826/videos
   ];
 
   return (
