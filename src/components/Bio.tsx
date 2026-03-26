@@ -66,7 +66,12 @@ export default function Bio() {
               <span className="text-gold font-semibold">3.1 million streams</span>,
               and built a following of{" "}
               <span className="text-gold font-semibold">27,000+</span> on
-              Instagram.
+              Instagram. A{" "}
+              <span className="text-gold font-semibold">
+                top 10 charting artist in the Christian/Gospel genre
+              </span>
+              , E-Knock is proving that the ancient faith has a voice in modern
+              music.
             </p>
             <p>
               His latest album,{" "}

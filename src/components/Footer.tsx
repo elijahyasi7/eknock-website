@@ -75,10 +75,10 @@ export default function Footer() {
 
           {/* Email */}
           <a
-            href="mailto:booking@eknockmusic.com"
+            href="mailto:holy40project@gmail.com"
             className="text-gray-400 hover:text-gold transition-colors text-sm tracking-wider"
           >
-            booking@eknockmusic.com
+            holy40project@gmail.com
           </a>
 
           {/* Copyright */}
