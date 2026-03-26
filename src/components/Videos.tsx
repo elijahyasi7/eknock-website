@@ -1,12 +1,11 @@
 export default function Videos() {
-  // To find video IDs: go to https://www.youtube.com/@e-knock6826/videos
+  // To add more videos: go to https://www.youtube.com/@e-knock6826/videos
   // Click a video, copy the ?v= parameter from the URL (11-char code)
-  // REPLACE: paste real E-Knock YouTube video IDs below
   const videoIds = [
-    "REPLACE_ID_1", // e.g. paste first video ID here
-    "REPLACE_ID_2", // e.g. paste second video ID here
-    "REPLACE_ID_3", // e.g. paste third video ID here
-    "REPLACE_ID_4", // e.g. paste fourth video ID here
+    "bhaLpDVlgDM",
+    "REPLACE_ID_2", // REPLACE: paste second video ID here
+    "REPLACE_ID_3", // REPLACE: paste third video ID here
+    "REPLACE_ID_4", // REPLACE: paste fourth video ID here
   ];
 
   return (
