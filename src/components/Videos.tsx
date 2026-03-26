@@ -2,10 +2,10 @@ export default function Videos() {
   // To add more videos: go to https://www.youtube.com/@e-knock6826/videos
   // Click a video, copy the ?v= parameter from the URL (11-char code)
   const videoIds = [
+    "XtLx0VYupAk",
+    "OMbr12YCDWQ",
+    "ttoxNrwq9VA",
     "bhaLpDVlgDM",
-    "PKapegaqyls", // "Get To Know" series Episode 1
-    "C06dxBkflqw", // Church Militant interview feature
-    "REPLACE_ID_4", // REPLACE: paste a video ID from https://www.youtube.com/@e-knock6826/videos
   ];
 
   return (
