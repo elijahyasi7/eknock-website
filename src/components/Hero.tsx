@@ -2,10 +2,33 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="stained-glass-bg relative min-h-screen flex items-center justify-center text-center px-4"
+      className="relative min-h-screen flex items-center justify-center text-center px-4 overflow-hidden"
     >
+      {/* YouTube video background — muted, autoplay, loop */}
+      <div className="absolute inset-0 z-0">
+        <div className="absolute inset-0 scale-150">
+          <iframe
+            className="w-full h-full pointer-events-none"
+            src="https://www.youtube.com/embed/XtLx0VYupAk?autoplay=1&mute=1&loop=1&playlist=XtLx0VYupAk&controls=0&showinfo=0&modestbranding=1&rel=0&iv_load_policy=3&disablekb=1&playsinline=1"
+            title="E-Knock Background Video"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            style={{ border: "none" }}
+          />
+        </div>
+        {/* Dark overlay for readability */}
+        <div className="absolute inset-0 bg-black/70" />
+        {/* Stained glass color wash over video */}
+        <div
+          className="absolute inset-0 mix-blend-multiply opacity-60"
+          style={{
+            background:
+              "radial-gradient(ellipse at 20% 50%, rgba(107, 29, 42, 0.6) 0%, transparent 50%), radial-gradient(ellipse at 80% 20%, rgba(26, 58, 107, 0.6) 0%, transparent 50%), radial-gradient(ellipse at 50% 80%, rgba(26, 92, 58, 0.4) 0%, transparent 50%)",
+          }}
+        />
+      </div>
+
       {/* Gothic arch SVG overlay */}
-      <div className="absolute inset-0 flex items-center justify-center opacity-[0.04] z-0">
+      <div className="absolute inset-0 flex items-center justify-center opacity-[0.04] z-[1]">
         <svg
           viewBox="0 0 400 600"
           className="w-[300px] sm:w-[400px] h-auto"
@@ -27,9 +50,11 @@ export default function Hero() {
 
       <div className="relative z-10 max-w-4xl mx-auto">
         <h1 className="font-heading text-6xl sm:text-8xl md:text-9xl font-black tracking-wider mb-4">
-          <span className="text-gradient-gold">E-KNOCK</span>
+          <span className="text-gradient-gold drop-shadow-[0_2px_10px_rgba(201,168,76,0.3)]">
+            E-KNOCK
+          </span>
         </h1>
-        <p className="text-lg sm:text-xl md:text-2xl text-gray-300 font-light tracking-[0.3em] uppercase mb-10">
+        <p className="text-lg sm:text-xl md:text-2xl text-gray-200 font-light tracking-[0.3em] uppercase mb-10 drop-shadow-lg">
           Where Faith Meets Flow
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -51,7 +76,7 @@ export default function Hero() {
             Book E-Knock
           </a>
         </div>
-        <div className="mt-16 text-gray-500 text-sm tracking-widest uppercase">
+        <div className="mt-16 text-gray-400 text-sm tracking-widest uppercase drop-shadow-lg">
           3.1M+ Streams &bull; 5 Albums &bull; Catholic Hip-Hop
         </div>
       </div>
