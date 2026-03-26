@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Inter:wght@300;400;500;600&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #ededed;
+  background: #0d0d0d;
+  font-family: "Inter", sans-serif;
+}
+
+/* Stained Glass Hero Background */
+.stained-glass-bg {
+  position: relative;
+  overflow: hidden;
+}
+
+.stained-glass-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse at 20% 50%, rgba(107, 29, 42, 0.4) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 20%, rgba(26, 58, 107, 0.4) 0%, transparent 50%),
+    radial-gradient(ellipse at 50% 80%, rgba(26, 92, 58, 0.3) 0%, transparent 50%),
+    radial-gradient(ellipse at 70% 60%, rgba(201, 168, 76, 0.2) 0%, transparent 40%);
+  z-index: 0;
+}
+
+.stained-glass-bg::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  opacity: 0.06;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='300' viewBox='0 0 200 300'%3E%3Cpath d='M100 0 L200 80 L200 220 L100 300 L0 220 L0 80 Z' fill='none' stroke='%23c9a84c' stroke-width='1'/%3E%3Cpath d='M100 30 L170 90 L170 210 L100 270 L30 210 L30 90 Z' fill='none' stroke='%23c9a84c' stroke-width='0.5'/%3E%3Ccircle cx='100' cy='150' r='40' fill='none' stroke='%23c9a84c' stroke-width='0.5'/%3E%3Cpath d='M100 110 L130 150 L100 190 L70 150 Z' fill='none' stroke='%23c9a84c' stroke-width='0.5'/%3E%3C/svg%3E");
+  background-size: 200px 300px;
+  z-index: 0;
+}
+
+/* Gothic arch decorative element */
+.gothic-arch {
+  position: relative;
+}
+
+.gothic-arch::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 30px;
+  border: 2px solid rgba(201, 168, 76, 0.3);
+  border-bottom: none;
+  border-radius: 30px 30px 0 0;
+}
+
+/* Gold gradient text */
+.text-gradient-gold {
+  background: linear-gradient(135deg, #c9a84c, #e2c97e, #c9a84c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Section divider */
+.section-divider {
+  width: 80px;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #c9a84c, transparent);
+  margin: 0 auto;
+}
+
+/* Card hover effects */
+.card-hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 30px rgba(201, 168, 76, 0.15);
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0d0d0d;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2a2a2a;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3a3a3a;
+}
