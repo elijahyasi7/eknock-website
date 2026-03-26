@@ -19,7 +19,7 @@ export default function Booking() {
     const formData = new FormData(form);
 
     try {
-      const response = await fetch("https://formspree.io/f/holy40project@gmail.com", {
+      const response = await fetch("https://formspree.io/f/mwvwplwp", {
         method: "POST",
         body: formData,
         headers: { Accept: "application/json" },
