@@ -1,10 +1,12 @@
 export default function Videos() {
-  // REPLACE: paste E-Knock YouTube video IDs below
+  // To find video IDs: go to https://www.youtube.com/@e-knock6826/videos
+  // Click a video, copy the ?v= parameter from the URL (11-char code)
+  // REPLACE: paste real E-Knock YouTube video IDs below
   const videoIds = [
-    "VIDEO_ID_1",
-    "VIDEO_ID_2",
-    "VIDEO_ID_3",
-    "VIDEO_ID_4",
+    "REPLACE_ID_1", // e.g. paste first video ID here
+    "REPLACE_ID_2", // e.g. paste second video ID here
+    "REPLACE_ID_3", // e.g. paste third video ID here
+    "REPLACE_ID_4", // e.g. paste fourth video ID here
   ];
 
   return (
@@ -36,6 +38,20 @@ export default function Videos() {
               />
             </div>
           ))}
+        </div>
+
+        <div className="text-center mt-10">
+          <a
+            href="https://www.youtube.com/@e-knock6826"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center px-6 py-3 border border-dark-border rounded-full text-gray-400 hover:text-gold hover:border-gold/30 transition-colors text-sm tracking-wider"
+          >
+            <svg className="w-5 h-5 mr-2" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+            </svg>
+            View All on YouTube
+          </a>
         </div>
       </div>
     </section>

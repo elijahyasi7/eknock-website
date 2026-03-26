@@ -33,9 +33,8 @@ export default function Hero() {
           Where Faith Meets Flow
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          {/* REPLACE: swap href with your real Spotify artist link */}
           <a
-            href="https://open.spotify.com/artist/E-Knock"
+            href="https://open.spotify.com/artist/3eUAf1Ft9WUdGf5MIrJLz5?si=UauoqQbSTTGD7khirs6OIg"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center px-8 py-4 bg-gold hover:bg-gold-light text-dark-bg font-semibold text-sm tracking-wider uppercase rounded transition-colors"

@@ -5,23 +5,23 @@ const albums = [
     description: "The debut. Where it all began.",
   },
   {
-    title: "Credo",
-    year: "2023",
-    description: "Declarations of faith in every bar.",
+    title: "Deus Vult",
+    year: "2022",
+    description: "God wills it. A battle cry in bars.",
   },
   {
-    title: "Vox Dei",
+    title: "Kanisa",
     year: "2023",
-    description: "The voice of God in modern sound.",
+    description: "The Church — in Syriac and in sound.",
   },
   {
-    title: "Ecclesia",
-    year: "2024",
-    description: "For the Church Militant.",
+    title: "Book of Eknock",
+    year: "2025",
+    description: "The testament of a Catholic rapper.",
   },
   {
     title: "Rapologia",
-    year: "2024",
+    year: "2025",
     description: "Catholic apologetics, verse by verse.",
   },
 ];
@@ -103,9 +103,8 @@ export default function Music() {
 
         {/* Streaming badges */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          {/* REPLACE: swap href with real Spotify artist URL */}
           <a
-            href="#"
+            href="https://open.spotify.com/artist/3eUAf1Ft9WUdGf5MIrJLz5?si=UauoqQbSTTGD7khirs6OIg"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 px-6 py-3 bg-[#1DB954]/10 border border-[#1DB954]/30 rounded-full hover:bg-[#1DB954]/20 transition-colors"
