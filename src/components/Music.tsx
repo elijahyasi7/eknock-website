@@ -9,21 +9,25 @@ const albums = [
     title: "Deus Vult",
     year: "2022",
     description: "God wills it. A battle cry in bars.",
+    cover: "https://i.scdn.co/image/ab67616d0000b2739e7238c5e8aec8dafb90234c",
   },
   {
     title: "Kanisa",
     year: "2023",
     description: "The Church — in Syriac and in sound.",
+    cover: "https://i.scdn.co/image/ab67616d0000b273e3b4531531932a19b061337a",
   },
   {
-    title: "Book of Eknock",
+    title: "Book of E-Knock",
     year: "2025",
     description: "The testament of a Catholic rapper.",
+    cover: "https://i.scdn.co/image/ab67616d00001e027e9ff50586ac37b1f7255d67",
   },
   {
     title: "Rapologia",
     year: "2025",
     description: "Catholic apologetics, verse by verse.",
+    cover: "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/48/28/2a/48282a35-01c4-2d97-8903-5a0e9d467c7d/artwork.jpg/300x300bb.webp",
   },
 ];
 
