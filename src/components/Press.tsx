@@ -10,6 +10,13 @@ const pressQuotes = [
     date: "February 2026",
     quote: "A Syriac Catholic Rapper with a Powerful Testimony.",
   },
+  {
+    outlet: "LifeSiteNews",
+    date: "",
+    quote:
+      "Catholic musician releases rap album promoting faith and traditional gender roles.",
+    link: "https://assets.lifesitenews.com/news/catholic-musician-releases-rap-album-promoting-faith-and-traditional-gender-roles/",
+  },
 ];
 
 export default function Press() {
@@ -23,33 +30,42 @@ export default function Press() {
           <div className="section-divider" />
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 mb-12">
-          {pressQuotes.map((item) => (
-            <div
-              key={item.outlet}
-              className="card-hover bg-dark-bg border border-dark-border rounded-lg p-8 relative"
-            >
-              {/* Decorative quote mark */}
-              <div className="absolute top-4 left-6 text-6xl text-gold/10 font-heading leading-none">
-                &ldquo;
-              </div>
-
-              <div className="relative z-10">
-                {/* Outlet badge */}
-                <div className="inline-block px-3 py-1 bg-gold/10 border border-gold/30 rounded text-gold text-xs font-semibold tracking-wider uppercase mb-6">
-                  {item.outlet}
+        <div className="grid md:grid-cols-3 gap-8 mb-12">
+          {pressQuotes.map((item) => {
+            const Wrapper = item.link ? "a" : "div";
+            const linkProps = item.link
+              ? { href: item.link, target: "_blank" as const, rel: "noopener noreferrer" }
+              : {};
+            return (
+              <Wrapper
+                key={item.outlet}
+                {...linkProps}
+                className="card-hover bg-dark-bg border border-dark-border rounded-lg p-8 relative block"
+              >
+                {/* Decorative quote mark */}
+                <div className="absolute top-4 left-6 text-6xl text-gold/10 font-heading leading-none">
+                  &ldquo;
                 </div>
 
-                <blockquote className="text-lg sm:text-xl text-gray-200 leading-relaxed italic mb-6">
-                  &ldquo;{item.quote}&rdquo;
-                </blockquote>
+                <div className="relative z-10">
+                  {/* Outlet badge */}
+                  <div className="inline-block px-3 py-1 bg-gold/10 border border-gold/30 rounded text-gold text-xs font-semibold tracking-wider uppercase mb-6">
+                    {item.outlet}
+                  </div>
 
-                <p className="text-gray-500 text-sm tracking-wider">
-                  {item.date}
-                </p>
-              </div>
-            </div>
-          ))}
+                  <blockquote className="text-lg sm:text-xl text-gray-200 leading-relaxed italic mb-6">
+                    &ldquo;{item.quote}&rdquo;
+                  </blockquote>
+
+                  {item.date && (
+                    <p className="text-gray-500 text-sm tracking-wider">
+                      {item.date}
+                    </p>
+                  )}
+                </div>
+              </Wrapper>
+            );
+          })}
         </div>
 
         <div className="text-center">
