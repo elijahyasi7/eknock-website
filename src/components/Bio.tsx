@@ -15,7 +15,7 @@ export default function Bio() {
             <div className="w-72 h-72 sm:w-80 sm:h-80 border-2 border-gold/50 overflow-hidden rounded-full">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src="/eknock-photo.jpg"
+                src="https://yt3.googleusercontent.com/BOtpJUDjhN3Gu-6cutLqpNakZMk1ijEsRLKERSyXl6hGeWbx1XUarHPQSuoIJkxyV1EMvtQy=s900-c-k-c0x00ffffff-no-rj"
                 alt="E-Knock — Fawaz Yasi"
                 className="w-full h-full object-cover"
               />
