@@ -3,6 +3,7 @@ const albums = [
     title: "Traditionis",
     year: "2022",
     description: "The debut. Where it all began.",
+    cover: "https://i.scdn.co/image/ab67616d0000b27302988b37535e8f5783591b09",
   },
   {
     title: "Deus Vult",
@@ -44,26 +45,35 @@ export default function Music() {
               key={album.title}
               className="card-hover bg-dark-bg border border-dark-border rounded-lg overflow-hidden group"
             >
-              {/* Album art placeholder */}
-              <div className="aspect-square bg-gradient-to-br from-burgundy/30 via-dark-bg to-cobalt/30 flex items-center justify-center relative">
-                <div className="text-center">
-                  <svg
-                    className="w-12 h-12 mx-auto mb-2 text-gold/40 group-hover:text-gold/70 transition-colors"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={1}
-                      d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3"
-                    />
-                  </svg>
-                  <p className="text-xs text-gray-500 tracking-wider uppercase">
-                    Album Art
-                  </p>
-                </div>
+              {/* Album art */}
+              <div className="aspect-square bg-gradient-to-br from-burgundy/30 via-dark-bg to-cobalt/30 flex items-center justify-center relative overflow-hidden">
+                {album.cover ? (
+                  // eslint-disable-next-line @next/next/no-img-element
+                  <img
+                    src={album.cover}
+                    alt={`${album.title} album cover`}
+                    className="w-full h-full object-cover"
+                  />
+                ) : (
+                  <div className="text-center">
+                    <svg
+                      className="w-12 h-12 mx-auto mb-2 text-gold/40 group-hover:text-gold/70 transition-colors"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={1}
+                        d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3"
+                      />
+                    </svg>
+                    <p className="text-xs text-gray-500 tracking-wider uppercase">
+                      Album Art
+                    </p>
+                  </div>
+                )}
                 <div className="absolute top-3 right-3 text-xs text-gold/60 font-heading">
                   {album.year}
                 </div>
